@@ -1,0 +1,189 @@
+function ejercicio1(a,b,c)
+{
+   var may=0;
+   if(a>b)
+   {
+      if(a>c)
+      {
+          may=a;
+      }
+      else
+      {
+
+        may=c;
+
+      }
+
+   }
+   else
+   {
+      if(b>c)
+      {
+        may=b;
+      }
+      else
+      {
+         may=c;
+      }
+   }
+	
+	return may;
+}
+
+
+function ejercicio2(a)
+{
+	var bol;
+
+   if(typeof a=="string"||typeof a =="object")
+   {
+      bol=true;
+
+   }
+   else
+   {
+   	bol=false;
+   }
+
+   return bol;
+
+}
+
+function ejercicio3(v)
+
+{
+	var s=0;
+	var m=1;
+
+	for (var i = 0; i < v.length ; i++) 
+	{
+		s=v[i]+s;
+		m=v[i]*m;
+	}
+
+	var salida="la suma es"+" "+s+" "+"la multiplicacion es"+" "+m;
+
+	return salida;
+
+}
+
+function ejercicio4(a)
+{
+	var  r1;
+	var  r2;
+	var res;
+
+
+    if(!isNaN(a))
+    {
+       r1=a||2;
+       r2=a&&2;
+       res="{and:2,or"+a+"}"+"("+a+"AND"+"2="+r2+";"+" "+a+"OR 2="+r1+")";
+
+
+    }
+    else
+    {
+    	res="no se puede realizar operaciones con este tipo de dato";
+    }
+
+  
+
+
+
+
+return res;
+
+ 
+}
+
+function ejercicio5(a)
+{
+	var c;
+	var newcad="";
+	
+	for(var i=0;i<a.length;i++)
+	{
+
+		c=a.charCodeAt(i);
+        
+
+		if(c==65)
+
+		{
+          newcad=newcad+a.charAt(i);
+          c=12910291;
+		}
+		if(c==69)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==73)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==79)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==85)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==97)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==101)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==105)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==111)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+		if(c==117)
+
+		{
+          newcad=newcad+a.charAt(i);
+		}
+
+
+
+
+	}
+
+		 if(newcad=="")
+		 {
+		 	newcad="no hay vocales";
+		 }
+
+
+	
+
+return newcad;
+}
+
+function ejercicio6(a)
+{
+	var x=a;
+	var v=new Array();
+  for(var i=0;i<a;i++)
+  {
+     v[i]=x;
+     x=x-1;
+  }
+  return v;
+}
